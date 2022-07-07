@@ -1,0 +1,16 @@
+{
+  "name": "azure_report",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "chrome-test": "cypress run --browser chrome --headless",
+    "postchrome-test": "jrm ./results/combined-report.xml \"./results/results-*.xml\"",
+    "script-chrome": "npm run chrome-test || npm run postchrome-test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^9.7.0"
+  }
+}
